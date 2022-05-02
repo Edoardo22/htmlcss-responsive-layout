@@ -55,6 +55,13 @@ body {
   flex-wrap: wrap;
 }
 
+.direction-col{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -76,12 +83,7 @@ body {
   flex-basis: 100%;
 }
 
-.card {
-  /* SOLO PER DEBUG */
-  background-color: red;
-  border-radius: 1rem;
-  min-height: 100px;
-}
+
 
 .bg-primary {
   background-color: var(--color-primary);
@@ -193,8 +195,8 @@ nav {
   text-align: center;
 }
 
-.col-card i {
-  font-size: 60px;
+.big-icon-secondary{
+  font-size: 60px; 
   color: var(--color-secondary);
 }
 
@@ -207,6 +209,45 @@ nav {
   line-height: 2rem;
 }
 
+.col-lg-half {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  max-width: 200px;
+  padding-bottom: 15px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+.center{
+  text-align: center;
+}
+.icon-small{
+  background-color: var(--color-primary);
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.testimonial{
+  background-color: var(--color-primary);
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.testimonial img{
+  width: 150px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 10px;
+}
 /* .menu {
     display: block;
   } */
@@ -219,12 +260,14 @@ nav {
   .col-lg-half {
     flex-basis: 50%;
   }
-
-  .col-card i {
-    font-size: 60px;
-  }
 }
-
+.big-pic{
+  width: 300px;
+}
+.about-img{
+  width: 200px;
+  border-radius: 50%;
+}
 @media screen and (max-width: 768px) {
   .container {
     width: 534px;
@@ -268,5 +311,9 @@ nav {
 
   .col-sm-full {
     flex-basis: 100%;
+  }
+  .flex{
+    flex-direction: column;
+    text-align: center;
   }
 }
