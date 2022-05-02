@@ -24,9 +24,6 @@ body {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-
-  /* SOLO PER DEBUG */
-  border: 1px dashed red;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -83,8 +80,15 @@ body {
   flex-basis: 100%;
 }
 
-
-
+.bg-white{
+  background-color: white;
+  border: 5px solid  var(--color-primary);
+  border-radius: 20px;
+}
+.color-white{
+  color: white;
+  padding-bottom: 20px;
+}
 .bg-primary {
   background-color: var(--color-primary);
 }
@@ -184,6 +188,9 @@ nav {
 
 .bg-secondary-light img {
   width: 200px;
+  bottom: -10px;
+  left: 20%;
+  position: relative;
 }
 
 .col-card {
@@ -248,10 +255,17 @@ button {
   aspect-ratio: 1;
   padding: 10px;
 }
-/* .menu {
-    display: block;
-  } */
 
+.b-radius{
+  border-radius: 10px;
+}
+  .big-pic{
+    width: 300px;
+  }
+  .about-img{
+    width: 200px;
+    border-radius: 50%;
+  }
 @media screen and (max-width: 992px) {
   .container {
     width: calc(var(--bp-md) - 2rem);
@@ -260,14 +274,12 @@ button {
   .col-lg-half {
     flex-basis: 50%;
   }
+  .bg-secondary-light img{
+    bottom: -37px;
+    left: 3%;
+  }
 }
-.big-pic{
-  width: 300px;
-}
-.about-img{
-  width: 200px;
-  border-radius: 50%;
-}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 534px;
@@ -293,6 +305,9 @@ button {
   .hamburger-menu {
     display: block;
   }
+  .bg-secondary-light img{
+    bottom: -37px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -315,5 +330,9 @@ button {
   .flex{
     flex-direction: column;
     text-align: center;
+  }
+  .bg-secondary-light img{
+    bottom: -10px;
+    left: 0;
   }
 }
